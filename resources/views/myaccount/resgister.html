@@ -1,0 +1,1539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>:: IMMO ::</title>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="css/sumoselect.css" rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div class="wreaper">
+
+  	<!--header strat-->
+    <div class="header">
+        <div class="container">
+        
+            <!--top header start-->
+            <div class="top-header clear">
+                <ul class="navbar-right">
+                    <li class="social-icon backgound-none"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#login-modal"><i class="fa fa-key"></i> Login</a></li>
+                    
+                    <li class="dropdown">
+                      <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-search icon_i"></i>Search <span class="caret"></span>
+                      </button>
+                    
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><input type="text" value="" placeholder="Search..." name=""></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-phone"></i></i> {{ Lang::get('website-lang.contact_us')}}</a></li>
+                    <li class="dropdown">
+                      <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Fr <span class="caret"></span>
+                      </button>
+                    
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="javascript:void(0)">Fr</a></li>
+                        <li><a href="javascript:void(0)">Fr</a></li>
+                        <li><a href="javascript:void(0)">Fr</a></li>
+                        <li><a href="javascript:void(0)">Fr</a></li>
+                      </ul>
+                    </li>                
+                </ul>
+            </div>
+            <!--top header end-->
+            
+            <!--bottom header start-->
+            <div class="bottom-header clear">
+                <div class="navbar-left logo-box"><a href="javascript:void(0)"><img src="images/logo.png" alt=""></a></div>
+                <div class="navbar-right header-ad"><img src="uploads/ad/header-add.jpg" alt=""></div>                
+            </div>
+            <!--bottom header end-->
+        
+        </div>
+    </div>
+    <!--header end-->
+    
+    <!--banner start-->
+    <div class="banner-box parallax">
+    <div class="container">
+        <div class="title-1">THE UNION OF 2 WORLDS WITHOUT COMMISSION</div>
+        <div class="title-2">Sell ​​, buy , save, are financing and more!</div>
+        <div class="search-box">
+            <div class="top-search clear">
+                <div class="property-button">Find a Property</div>
+                <div class="More-button">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#criteria" aria-expanded="false" aria-controls="criteria">
+                     + More criteria
+                    </button>
+                </div>
+            </div>
+            
+            <div class="bottom-search clear">
+                <div class="bottom-search-box">
+                    <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                        <option value="cheese">Cheese</option>
+                        <option value="tomatoes">Tomatoes</option>
+                        <option value="mozarella">Mozzarella</option>
+                        <option value="mushrooms">Mushrooms</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="onions">Onions</option>
+                    </select>
+                </div>
+                <div class="bottom-search-box">
+                    <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                        <option value="cheese">Cheese</option>
+                        <option value="tomatoes">Tomatoes</option>
+                        <option value="mozarella">Mozzarella</option>
+                        <option value="mushrooms">Mushrooms</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="onions">Onions</option>
+                    </select>
+                </div>
+                <div class="bottom-search-box">
+                    <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                        <option value="cheese">Cheese</option>
+                        <option value="tomatoes">Tomatoes</option>
+                        <option value="mozarella">Mozzarella</option>
+                        <option value="mushrooms">Mushrooms</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="onions">Onions</option>
+                    </select>
+                </div>
+                <div class="bottom-search-box">
+                    <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                        <option value="cheese">Cheese</option>
+                        <option value="tomatoes">Tomatoes</option>
+                        <option value="mozarella">Mozzarella</option>
+                        <option value="mushrooms">Mushrooms</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="onions">Onions</option>
+                    </select>
+                </div>
+                <div class="bottom-search-box ui-slider-box">
+                    <input type="text" class="price_rang_a" id="amount" name="price_range" readonly style="border:0; font-weight:normal;">
+                    <div id="slider-range"></div>
+                </div>
+                <div class="bottom-search-box"><button type="button" class="search-button">Search <i class="fa fa-angle-right my_angle"></i></button></div>
+            </div>
+            <!--criteria start-->
+            <div class="collapse" id="criteria">
+                  <div class="well">
+                  
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row criteria-box">
+                                <div class="col-xs-4 criteria-title">Property subtype :</div>
+                                <div class="col-xs-8">
+                                <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                                    <option value="cheese">Cheese</option>
+                                    <option value="tomatoes">Tomatoes</option>
+                                    <option value="mozarella">Mozzarella</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                    <option value="pepperoni">Pepperoni</option>
+                                    <option value="onions">Onions</option>
+                                </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row criteria-box">
+                                <div class="col-xs-4 criteria-title">Property subtype :</div>
+                                <div class="col-xs-8">
+                                <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                                    <option value="cheese">Cheese</option>
+                                    <option value="tomatoes">Tomatoes</option>
+                                    <option value="mozarella">Mozzarella</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                    <option value="pepperoni">Pepperoni</option>
+                                    <option value="onions">Onions</option>
+                                </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row criteria-box">
+                                <div class="col-xs-4 criteria-title">land area :</div>
+                                <div class="col-xs-8">
+                                    <div class="left-box mp-box">
+                                        <ul>
+                                            <li><input type="radio" name="mp" id="" value=""><label>m<sup>2</sup></label></li>
+                                            <li><input type="radio" name="mp" id="" value=""><label>pl<sup>2</sup></label></li>
+                                        </ul>
+                                    </div>
+                                    <div class="right-box">
+                                        <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                            <option value="mushrooms">Mushrooms</option>
+                                            <option value="pepperoni">Pepperoni</option>
+                                            <option value="onions">Onions</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row criteria-box Properties-li">
+                                <div class="col-xs-4 criteria-title">Properties :</div>
+                                <div class="col-xs-8">
+                                <ul>
+                                    <li><input type="radio" name="Properties" id="">For sale</li>
+                                    <li><input type="radio" name="Properties" id="">Free visits</li>
+                                    <li><input type="radio" name="Properties" id="">sold</li>
+                                    <li><input type="radio" name="Properties" id="">stars homes</li>
+                                </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row criteria-box">
+                                <div class="col-xs-4 criteria-title">Property subtype :</div>
+                                <div class="col-xs-8">
+                                <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                                    <option value="cheese">Cheese</option>
+                                    <option value="tomatoes">Tomatoes</option>
+                                    <option value="mozarella">Mozzarella</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                    <option value="pepperoni">Pepperoni</option>
+                                    <option value="onions">Onions</option>
+                                </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row criteria-box">
+                                <div class="col-xs-4 criteria-title">Property subtype :</div>
+                                <div class="col-xs-8">
+                                <select multiple="multiple" name="region[]" placeholder="Region" class="SlectBox" id="region">
+                                    <option value="cheese">Cheese</option>
+                                    <option value="tomatoes">Tomatoes</option>
+                                    <option value="mozarella">Mozzarella</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                    <option value="pepperoni">Pepperoni</option>
+                                    <option value="onions">Onions</option>
+                                </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row criteria-box include-box">
+                                <div class="col-xs-4 criteria-title">also include :</div>
+                                <div class="col-xs-8">
+                                <ul>
+                                    <li><input type="checkbox"> Cheese</li>
+                                    <li><input type="checkbox"> Tomatoes</li>
+                                </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-12 well-text">
+                            <p><a href="#">Recherche par code d'accès, numéro de téléphone et nom de rue »</a></p>
+                            <p><a href="#">Réinitialiser</a></p>
+                            <button class="sidebar_btn" type="button">Appliquer</button>
+                        </div>
+                    </div>
+                    
+                  </div>
+            </div>
+            <!--criteria end-->
+        </div>
+    </div>
+    </div>
+    <!--banner end-->
+    
+    <!--content start-->
+    <div class="content-box">
+    <div class="container">
+    <div class="row">
+      
+      
+      	<div class="resgister-form">
+        
+        	<div class="stepwizard" style="display:none;">
+                <div class="stepwizard-row setup-panel">
+                  <div class="stepwizard-step"><a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a></div>
+                  <div class="stepwizard-step"><a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a></div>
+                  <div class="stepwizard-step"><a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-6" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-7" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-8" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-9" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-10" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-11" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-12" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                  <div class="stepwizard-step"><a href="#step-13" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a></div>
+                </div>
+          	</div> 
+            
+            <form role="form" action="" method="post">
+      
+        		<div class="setup-content" id="step-1">
+                	<div class="col-sm-12"><h3 class="step-title">Ma fiche descriptive</h3></div>
+                	<div class="clear">                	
+                      <div class="form-group col-sm-6">
+                        <label class="control-label">Type de propriete</label>
+                        <div class="select-box">
+                            <select>
+                                <option>Type de propriete</option>
+                                <option>Type de propriete</option>
+                                <option>Type de propriete</option>
+                                <option>Type de propriete</option>
+                            </select>
+                        </div>
+                      </div>                  
+                      <div class="form-group col-sm-6">
+                        <label class="control-label">Prix demande</label>
+                        <input maxlength="100" placeholder="Prix demande" type="text">
+                      </div>                  
+                      <div class="form-group col-sm-6">
+                        <label class="control-label">Precision</label>
+                        <div class="select-box">
+                            <select>
+                                <option>Precision</option>
+                                <option>Precision</option>
+                                <option>Precision</option>
+                                <option>Precision</option>
+                            </select>
+                        </div>
+                      </div>                  
+                      <div class="form-group col-sm-6">
+                        <label class="control-label">Sous-types de propriete</label>
+                        <div class="select-box">
+                            <select>
+                                <option>Sous-types</option>
+                                <option>Sous-types</option>
+                                <option>Sous-types</option>
+                                <option>Sous-types</option>
+                            </select>
+                        </div>
+                      </div>                  
+                      <div class="form-group col-sm-6">
+                        <label class="control-label">Annee de construction</label>
+                        <div class="select-box">
+                            <select>
+                                <option>Annee</option>
+                                <option>Annee</option>
+                                <option>Annee</option>
+                                <option>Annee</option>
+                            </select>
+                        </div>
+                      </div>                  
+                      <div class="form-group col-sm-12">
+                        <ul>
+                            <li><input type="checkbox"> Es visite libre</li>
+                            <li><input type="checkbox"> Neuve</li>
+                        </ul>
+                      </div>                  
+                      <div class="form-group col-sm-6">
+                        <label class="control-label">Description francais</label>
+                        <textarea></textarea>
+                      </div>                  
+                      <div class="form-group col-sm-6">
+                        <label class="control-label">Description anglais</label>
+                        <textarea></textarea>
+                      </div>	
+                      <div class="col-sm-12">
+                      <button class="nextBtn pull-right" type="button">Next</button>
+                      </div>
+                
+            		</div>                
+                </div>
+                
+                <div class="setup-content normal-height" id="step-2">
+                  <div class="clear">
+                       <div class="col-sm-6">
+                            
+                              <div class="box-title">Vous rejoindre
+                              </div>
+                            
+                              <!-- Tab panes -->
+                              <div class="setup-content-box clear">
+                                
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <div class="row">
+                                        <div class="form-group col-sm-8">
+                                            <label class="control-label">Telephone</label>
+                                            <input maxlength="100" placeholder="" type="text">
+                                        </div>
+                                        <div class="form-group col-sm-8">
+                                            <label class="control-label">Cellulaire</label>
+                                            <input maxlength="100" placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                
+                              </div> 
+                        </div>
+                        <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+                      	<div class="col-sm-12">
+                        	<button class="prevBtn pull-left" type="button">Back</button>
+                        	<button class="nextBtn pull-right" type="button">Next</button>
+                      	</div>                    
+                  </div>
+                </div>
+                
+                <div class="setup-content" id="step-3">
+               		<div class="col-sm-6">
+                        
+                        <div class="box-title">
+                        	Localisation
+                        </div>
+                
+                        <div class="setup-content-box clear">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="row">
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">Region</label>
+                                    <div class="select-box">
+                                        <select>
+                                            <option>Region</option>
+                                            <option>Region</option>
+                                            <option>Region</option>
+                                            <option>Region</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">Ville</label>
+                                    <div class="select-box">
+                                        <select>
+                                            <option>Ville</option>
+                                            <option>Ville</option>
+                                            <option>Ville</option>
+                                            <option>Ville</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">Type dartere</label>
+                                    <div class="select-box">
+                                        <select>
+                                            <option>Type dartere</option>
+                                            <option>Type dartere</option>
+                                            <option>Type dartere</option>
+                                            <option>Type dartere</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">Nom de lartere</label>
+                                    <input maxlength="100" placeholder="" type="text">
+                                </div>
+                                
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label"># Residence</label>
+                                    <input maxlength="100" placeholder="" type="text">
+                                </div>
+                                
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">Code postal</label>
+                                    <input maxlength="100" placeholder="" type="text">
+                                </div>
+                            </div>
+                         </div> 
+                	</div>              		
+                    
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>               
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-4">
+               		<div class="col-sm-6">
+                        
+                        <div class="box-title">
+                        	Carte
+                        </div>
+                
+                        <div class="setup-content-box clear">
+                            <p class="map-text">Valider que la position de votre maison est la bonne sinon vous pouvez cliquer sur la carte pour changer la position.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14720.91049758667!2d75.8766733!3d22.7197794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc84268147247332c!2sCyber+Infrastructure+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1452522189101" width="100%" height="480px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                         </div> 
+                	</div>              		
+                    
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>               
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-5">
+                
+                	<div class="col-sm-6">
+                        
+                        <div class="box-title">
+                        	Dimensions
+                        </div>
+                
+                        <div class="setup-content-box clear">
+                        	<div class="row">
+                            
+                            	<div class="form-group col-sm-8">
+                                    <label class="control-label">Facade du terrain en pied</label>
+                                    <input type="text" placeholder="" maxlength="100">
+                                </div>
+                                
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">Profondeur du terrain en pied</label>
+                                    <input type="text" placeholder="" maxlength="100">
+                                </div>
+                                
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">Largeur du batiment en pied</label>
+                                    <input type="text" placeholder="" maxlength="100">
+                                </div>
+                                
+                                <div class="form-group col-sm-8">
+                                    <label class="control-label">Profondeur du batiment en pied</label>
+                                    <input type="text" placeholder="" maxlength="100">
+                                </div>
+                                
+                            </div>
+                         </div> 
+                	</div>              		
+                    
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+               		
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-6">
+                
+                	<div class="col-sm-6">
+                        
+                        <div class="box-title">
+                        	Evaluation
+                        </div>
+                
+                        <div class="setup-content-box clear">
+                        	<div class="row">
+                            <div class="form-group col-sm-8">
+                                <label class="control-label">Rôle d’évaluation</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                             </div>   
+                            <div class="form-group col-sm-8">
+                                <label class="control-label">Batimemt</label>
+                                <input name="" type="text">
+                             </div> 
+                            <div class="form-group col-sm-8">
+                                <label class="control-label">Tarrain</label>
+                                <input name="" type="text">
+                             </div> 
+                            <div class="form-group col-sm-8">
+                                <label class="control-label">Total</label>
+                                <input name="" type="text">
+                             </div> 
+                            </div>
+                        </div> 
+                	</div>              		
+                    
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+               		
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-7">
+                
+                	<div class="col-sm-6">
+                        
+                        <div class="box-title">
+                        	Frais mensuels/Taxes
+                        </div>
+                
+                        <div class="setup-content-box clear">
+                        	
+                           		<div class="inner-setup-box clear">
+                                	<h3>Frais mensuels</h3>
+                                    <div class="row">
+                            		
+                           			<div class="form-group col-sm-8">
+                                        <label class="control-label">Electricite</label>
+                                        <input name="" type="text">
+                                    </div> 
+                            		<div class="form-group col-sm-8">
+                                        <label class="control-label">Assurance</label>
+                                        <input name="" type="text">
+                                    </div>
+                             		<div class="form-group col-sm-8">
+                                        <label class="control-label">Chauffage</label>
+                                        <input name="" type="text">
+                                    </div>
+                             		<div class="form-group col-sm-8">
+                                        <label class="control-label">Frais dentretien</label>
+                                        <input name="" type="text">
+                                     </div> 
+                             		</div>
+                             	</div>
+                                
+                                <div class="inner-setup-box clear">
+                                	<h3>Taxes</h3>
+                                    <div class="row">
+                            		<div class="form-group col-sm-8">
+                                        <label class="control-label">Taxes municipales</label>
+                                        <input name="" type="text">
+                                     </div> 
+                           			<div class="form-group col-sm-8">
+                                        <label class="control-label">Taxes scolaries</label>
+                                        <input name="" type="text">
+                                     </div> 
+                            		<div class="form-group col-sm-8">
+                                        <label class="control-label">Autres taxes</label>
+                                        <input name="" type="text">
+                                     </div> 
+                             		</div>
+                             	</div>
+
+                            
+                        </div> 
+                	</div>              		
+                    
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+               		
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-8">
+                	
+               		<div class="col-sm-6">
+                        
+                        <div class="box-title">
+                        	Inclusions/Exclusions
+                        </div>
+                
+                        <div class="setup-content-box clear">
+                        	
+                           		<div class="inner-setup-box clear">
+                                	<h3>Inclusions</h3>
+                                    <div class="row">
+                                    <div class="form-group col-sm-8">
+                                        <label class="control-label">Inclusions</label>
+                                        <div class="select-box">
+                                            <select>
+                                                <option>Selectionner</option>
+                                                <option>Selectionner</option>
+                                                <option>Selectionner</option>
+                                                <option>Selectionner</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    	
+                            		<div class="form-group col-sm-8">
+                                        <label class="control-label">Autres</label>
+                                        <input name="" type="text">
+                                    </div> 
+                           			
+                             		</div>
+                             	</div>
+                                
+                                <div class="inner-setup-box clear">
+                                	<h3>Exclusions</h3>
+                                    <div class="row">
+                            		<div class="form-group col-sm-8">
+                                        <label class="control-label">Exclusions</label>
+                                        <div class="select-box">
+                                            <select>
+                                                <option>Selectionner</option>
+                                                <option>Selectionner</option>
+                                                <option>Selectionner</option>
+                                                <option>Selectionner</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    	
+                            		<div class="form-group col-sm-8">
+                                        <label class="control-label">Autres</label>
+                                        <input name="" type="text">
+                                    </div>
+                             		</div>
+                             	</div>
+
+                            
+                        </div> 
+                	</div>              		
+                    
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+                    
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-9">
+                	<div class="col-sm-6">
+                    <div class="box-title">
+                        Dimensions des pieces
+                    </div>
+            
+                    <div class="setup-content-box clear">                
+                		<div class="inner-setup-box clear">
+                        <h3>Piece non-defini</h3>
+                        <div class="row">
+                        <div class="form-group col-xs-6">
+                            <label class="control-label">Piece</label>
+                            <div class="select-box">
+                                <select>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group col-xs-6">
+                            <label class="control-label">Etage</label>
+                            <div class="select-box">
+                                <select>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                </select>
+                            </div>
+                        </div>
+                            
+                        <div class="form-group col-sm-12">
+                            <div class="row">
+                            	<label class="form-group-title col-sm-12">Autres</label>
+                            	<div class="col-xs-6">
+                                <label>Pieds</label>
+                            	<input name="" type="text">
+                                </div>
+                                <div class="col-xs-6">
+                                <label>Pouces</label>
+                            	<input name="" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <div class="row">
+                            	<label class="form-group-title col-sm-12">Profondeur</label>
+                            	<div class="col-xs-6">
+                                <label>Pieds</label>
+                            	<input name="" type="text">
+                                </div>
+                                <div class="col-xs-6">
+                                <label>Pouces</label>
+                            	<input name="" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-11">
+                        	<div class="row">
+                            <label class="control-label col-sm-12">Type de planch</label>
+                            <div class="col-sm-9">
+                            <div class="select-box">
+                                <select>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                    <option>Selectionner</option>
+                                </select>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="add-button-box">
+                        	<button type="button"><i class="fa fa-plus"></i></button>
+                        </div>
+                        
+                        
+                        </div>
+                    </div>
+					</div>
+                    </div>
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+                                   		
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-10">
+                	<div class="col-sm-6">
+                        <div class="box-title">
+                            Batiment et interieur
+                        </div>
+                        <div class="setup-content-box clear">
+                        	<div class="row">
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Armoires</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div> 
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Type de fenetre</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Sous-sol</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Toiture</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Equipement disponible</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Appareils en location</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Mode de chauffage</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Energie pour le chauffage</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                         </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+               		
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-11">
+                
+                	<div class="col-sm-6">
+                        <div class="box-title">
+                            Terrain et exteneur
+                        </div>
+                        <div class="setup-content-box clear">
+                        	<div class="row">
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Garage</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div> 
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Piscine</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Topographie</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Systeme degouts</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Proximite de</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Revetements</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Fondation</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Approvisionnement en eau</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Autre</label>
+                                <input type="text" name="">
+                            </div>
+                            
+                         </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+               		
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-12">
+                
+                	<div class="col-sm-6">
+                        <div class="box-title">
+                            Loyers
+                        </div>
+                        <div class="setup-content-box clear">
+                        <div class="inner-setup-box clear">
+							<h3>Loyer non-defini</h3>
+                        	<div class="row">
+                            	<div class="form-group col-sm-6">
+                                    <label class="control-label">Type</label>
+                                    <div class="select-box">
+                                        <select>
+                                            <option>Selectionner</option>
+                                            <option>Selectionner</option>
+                                            <option>Selectionner</option>
+                                            <option>Selectionner</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label class="control-label">Prix par mois</label>
+                                    <input type="text" name="">
+                                </div> 
+                                
+                                <div class="col-xs-12 form-group">
+                                	<input type="checkbox"> Deja louer par un locataire?
+                                </div>
+                                <div class="add-button-box">
+                                    <button type="button"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>    
+                        </div>
+                    </div>
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+               		
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Next</button>
+                    </div>          
+        		</div>
+                
+                <div class="setup-content" id="step-13">
+	                	
+					<div class="col-sm-6">
+                        <div class="box-title">
+                            Autres details
+                        </div> 
+                        <div class="setup-content-box clear">               	
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Nombre de chambre</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Nombre de salle(s) de bain</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Nombre de parking exterieur</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="control-label">Nombre de parking interieur</label>
+                                <div class="select-box">
+                                    <select>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                        <option>Selectionner</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-setup-box clear">
+                        	<h3>Caracteristiques</h3>
+                            <div>
+                            	<ul>
+                                	<li><input type="checkbox"> Avec Revenu</li>
+                                    <li><input type="checkbox"> Piscine</li>
+                                    <li><input type="checkbox"> Sans voisin a lamere</li>
+                                    <li><input type="checkbox"> Foyer</li>
+                                    <li><input type="checkbox"> Vue panoramique</li>
+                                    <li><input type="checkbox"> Garage</li>
+                                    <li><input type="checkbox"> Bord de leau</li>
+                                    <li><input type="checkbox"> Stationnement exterieur</li>
+                                </ul>
+                            </div>
+                        </div>   
+                        </div>
+                    </div>
+                    <div class="col-sm-6 textarea-height"><textarea>Aide</textarea></div>
+                                
+               		
+              		<div class="col-sm-12">
+                        <button class="prevBtn pull-left" type="button">Back</button>
+                        <button class="nextBtn pull-right" type="button">Submit</button>
+                    </div>          
+        		</div>
+                
+               
+                
+                
+             </form>   
+        
+        </div>
+      
+        
+    </div>    
+    </div>
+    </div>
+    <!--content end-->
+  
+  
+  	<!--bottom content start-->
+    <div class="bottom-content-box parallax">
+        <div class="container">
+            <div class="bottom-inner-content">
+                <div><button type="button">Here's IMMO - clic.ca offers</button></div>
+                Guidance to sell your property Telephone support a real help to the fixing of sales prices Assistance in the development of your property 
+            </div>
+        </div>
+    </div>
+    <!--bottom content end-->
+  
+  
+  	<!--footer start-->
+    <div class="footer">
+    
+        <!--top footer start-->
+        <div class="top-footer">
+            <div class="container">	
+                <ul class="clear">
+                    <li><a href="javascript:void(0)">Buy  </a></li>
+                    <li><a href="javascript:void(0)">Sale  </a></li>
+                    <li><a href="javascript:void(0)">Packages  </a></li>
+                    <li><a href="javascript:void(0)">Traders  </a></li>
+                    <li><a href="javascript:void(0)">Brokers  </a></li>
+                    <li><a href="javascript:void(0)"> Funding  </a></li>
+                </ul>
+            </div>
+        </div>
+        <!--top footer end-->
+        
+        <!--center footer start-->
+        <div class="center-footer">
+            <div class="container clear">
+                
+                <div class="col-sm-3">
+                    <h2 class="footer-title">Facebook</h2>
+                    <div class="footer-content">
+                        <img src="images/fb-img.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="col-sm-3">
+                    <h2 class="footer-title">My account</h2>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="javascript:void(0)">My account MY</a></li>
+                            <li><a href="javascript:void(0)">ACCOUNT POLICY TERMS </a></li>
+                            <li><a href="javascript:void(0)">OF PRIVACY Login</a></li>
+                            <li><a href="javascript:void(0)"></a></li>
+                            <li><a href="javascript:void(0)"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-sm-3">
+                    <h2 class="footer-title">Blog</h2>
+                    <div class="footer-content">
+                        <p>S’ORGANISER POUR DÉMÉNAGER : PAR OÙ COMMENCER? LE HOME STAGING AU SERVICE DE VOTRE PROPRIÉTÉ! UN COURTIER IMMOBILIER EN 2015 QUEL SONT LES COÛTS À PRÉVOIR LORS DE L’ACHAT D’UNE PROPRIÉTÉ ? L’INSPECTION PRÉACHAT, UN BON INVESTISSEMENT</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-3">
+                    <h2 class="footer-title">About</h2>
+                    <div class="footer-content">
+                        <p>Immo-Clic.ca n’est pas une agence immobilière, mais une plate-forme web regroupant une sélection de courtiers immobiliers d’agences immobilières différentes.</p>
+                        <div><button type="button">Lire la suite</button></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--center footer end-->
+        
+        <!--bottom footer start-->
+        <div class="bottom-footer">
+            <div class="container">
+                <a title="Immo-Clic.ca" href="/">Immo-Clic.ca</a> &copy; 2015. Tous droits réservés - Réalisation par <a target="_blank" title="Agence Captiv" href="//agencecaptiv.com/"> Agence Captiv</a>
+            </div>
+        </div>
+        <!--bottom footer end-->
+    
+    </div>
+    <!--footer end-->
+  
+	</div>
+    <!--wrapper end-->
+    
+   
+
+
+<!--forgot password start-->
+<div class="modal fade immo-modal" id="forgot-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <button type="button" class="modal-close-button" data-dismiss="modal" aria-label="Close">&times;</button>      
+      
+      <div class="modal-body">
+        	
+        	<div class="modal-logo">
+            	<img src="images/logo.png" alt="Logo">
+            </div>
+        	
+            <div class="main-field-box">
+            	
+               	<div class="field-box">
+                	<label>Username</label>
+                    <input type="text" value="" placeholder="" id="" class="field-input">
+                </div>
+                
+                
+                <div class="field-box">
+                	<button type="submit" class="login-button">Forgot Password</button>
+                </div>
+                
+                
+            </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--forgot password end-->
+
+<!--login start-->
+<div class="modal fade immo-modal" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <button type="button" class="modal-close-button" data-dismiss="modal" aria-label="Close">&times;</button>      
+      
+      <div class="modal-body">
+      
+      
+      <div class="login-tab">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#Login" aria-controls="Login" role="tab" data-toggle="tab">Login</a></li>
+            <li role="presentation"><a href="#Register" aria-controls="Register" role="tab" data-toggle="tab">Register</a></li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="Login">
+            	
+                <div class="main-field-box">
+                    
+                    <div class="field-box">
+                        <label>Username</label>
+                        <input type="email" value="" placeholder="" id="" class="field-input">
+                    </div>
+                    
+                    <div class="field-box">
+                        <label>Password</label>
+                        <input type="password" value="" placeholder="" id="" class="field-input">
+                    </div>
+                    
+                    <div class="field-box">
+                        <input type="checkbox" name="" value=""> Remember Password
+                    </div>
+                    
+                    <div class="field-box">
+                        <button type="submit" class="login-button">Login</button>
+                    </div>
+                    
+                    <div class="field-box field-link">
+                        <a href="#">Register</a> <span class="space-box">|</span> <a href="#">Lost your password</a>
+                    </div>                
+                    
+                    
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Register">
+            	                
+                <div class="main-field-box">
+                    
+                    <div class="field-box">
+                        <label>Name</label>
+                        <input type="text" value="" placeholder="" id="" class="field-input">
+                    </div>
+                    
+                    <div class="field-box">
+                        <label>Email</label>
+                        <input type="email" value="" placeholder="" id="" class="field-input">
+                    </div>
+                    
+                    <div class="field-box">
+                        <label>Number</label>
+                        <input type="text" value="" placeholder="" id="" class="field-input">
+                    </div>
+                    
+                    <div class="field-box">
+                        <label>Password</label>
+                        <input type="password" value="" placeholder="" id="" class="field-input">
+                    </div>
+                    
+                    <div class="field-box">
+                        <label>Confirm Password</label>
+                        <input type="password" value="" placeholder="" id="" class="field-input">
+                    </div>
+                    
+                    <div class="field-box">
+                        <button type="submit" class="login-button">Register</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+          </div>
+        
+       </div>
+      
+        	
+        	
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--login end-->    
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.sumoselect.js"></script>
+<script src="js/step-form.js"></script>
+<script src="js/parallax.js "></script>
+<script src="js/smoothscroll.js"></script>
+
+<script type="text/javascript">
+    
+	
+
+$(document).ready(function() {
+ 
+  $("#testimonials-slider").owlCarousel({
+ 
+	  navigation : true, // Show next and prev buttons
+	  slideSpeed : 300,
+	  paginationSpeed : 400,
+	  singleItem:true
+ 
+  });
+ 
+});
+
+
+$(document).ready(function () {
+	$('#city_region').SumoSelect({ 
+				okCancelInMulti: true ,
+	triggerChangeCombined: true,
+	forceCustomRendering: true	
+});
+	
+	window.asd = $('.SlectBox').SumoSelect({ csvDispCount: 3 });
+	window.test = $('.testsel').SumoSelect({okCancelInMulti:true });
+	window.testSelAll = $('.testSelAll').SumoSelect({okCancelInMulti:true, selectAll:true });
+	window.testSelAll2 = $('.testSelAll2').SumoSelect({selectAll:true });
+});
+
+
+ $('#mina').html("$" + $( "#slider" ).slider( "values", 0 ) );
+      $('#maxa').html( "$" + $( "#slider" ).slider( "values", 1 ) );
+
+       $( "#slider-range" ).slider({
+                  range: true,
+                  min: 100.00,
+                  max: 1111.50,
+                  values: [ 200, 500 ],
+                  slide: function( event, ui ) {
+                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                  }
+                });
+                $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+                  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
+
+//Parallax effect for bacjgroundimage
+jQuery(window).bind('load', function() {
+parallaxInit();
+});
+function parallaxInit() {
+
+jQuery('.parallax').each(function() {
+
+	jQuery(this).parallax("0",0);
+});
+}
+      
+
+</script>
+
+</body>
+</html>

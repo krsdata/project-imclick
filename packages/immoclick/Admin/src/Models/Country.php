@@ -1,0 +1,20 @@
+<?php
+
+namespace Immoclick\Admin\Models;
+
+use Illuminate\Database\Eloquent\Model as Eloquent;
+
+class Country extends BaseModel {
+
+    /**
+     * The metrics table.
+     * 
+     * @var string
+     */
+    protected $table = 'countries';
+    protected $guarded = ['created_at' , 'updated_at' , 'id' ];
+    protected $fillable = ['country_name'];
+
+}
+
+
